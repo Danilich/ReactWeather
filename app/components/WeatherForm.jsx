@@ -19,7 +19,7 @@ if(location.length>0){
       <div>
 
         <form onSubmit={this.onFormSubmit}>
-          <input type="text" ref="location">
+          <input type="search" ref="location" placeholder="Search weather by city">
           </input>
             <button className="button expanded hollow">
               GetWeather

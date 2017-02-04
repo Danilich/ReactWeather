@@ -33,7 +33,7 @@ onSearch:function(e){
             <form onSubmit={this.onSearch}>
               <ul className="menu">
                 <li>
-                  <input type="search" placeholder="Seach Weather"/>
+                  <input type="search" placeholder="Search weather by city"/>
                 </li>
 
                 <li>
