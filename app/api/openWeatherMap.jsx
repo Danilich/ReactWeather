@@ -12,14 +12,14 @@ module.exports={
   return  axios.get(requestUrl).then(function (response) {
 
       if(response.data.cod==="404" && response.data.message){
-        throw new Error(response.data.message);
+        throw new Error("Try again");
       }else if(response.data.cod==="200"){
         return response.data.list[0].main.temp
       }else{
         throw new Error('Try again');
       }
     },function (response) {
-      throw new Error(response.data.message);
+      throw new Error(response);
     });
   }
 }
