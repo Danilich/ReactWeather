@@ -20,8 +20,8 @@ if(location.length>0){
 
         <form onSubmit={this.onFormSubmit}>
           <input type="text" ref="location">
-</input>
-            <button>
+          </input>
+            <button className="button expanded hollow">
               GetWeather
             </button>
 
